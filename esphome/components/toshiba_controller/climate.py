@@ -7,7 +7,7 @@ CODEOWNERS = ["@MichaelBitard"]
 DEPENDENCIES = ["uart"]
 
 toshiba_controller_ns = cg.esphome_ns.namespace("toshiba_controller")
-ToshibaController = toshiba_controller_ns.class_("ToshibaController", cg.Component, cg.Climate)
+ToshibaController = toshiba_controller_ns.class_("ToshibaController", cg.Component)
 
 CONFIG_SCHEMA = cv.Schema({
     cv.GenerateID(): cv.declare_id(ToshibaController),
